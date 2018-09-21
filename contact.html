@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Tells the Browser How the Webpage Should Be Rendered -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Sets the Title of the Webpage -->
+  <title>Contact | Reed Fisher</title>
+  <!-- Connecting this HTML file with the 2 CSS Files -->
+  <!-- Reset.css clears formatting while Style.css adds formatting -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Creates the header at the top of the page -->
+  <header id="masthead">
+    <div class="container">
+      <!-- Puts name near the top left corner of webpage  -->
+      <a href="index.html" id="logo">Reed Fisher</a>
+      <!-- Puts links near the top right corner of webpage -->
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Creates a content box with the title "Contact" -->
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+      <!-- Creates a web form that takes in a Name, Email and Message  -->
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar">
+      <!-- Creates a content box with the title "Connect" -->
+      <div id="connect">
+        <h2>Connect</h2>
+        <!-- Adds 3 Images that are Links to Different Websites -->
+        <a href="https://github.com/cyberfishy/"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/reedfisher/"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="http://stackoverflow.com/users/7736634/reedfisher?tab=profile"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
+  <!-- Creates a copyright notification at the bottom of the page -->
+  <footer>
+    <div class="container">
+      Copyright &copy; 2018 Reed Fisher
+    </div>
+  </footer>
+</body>
+
+</html>
